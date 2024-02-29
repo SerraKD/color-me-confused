@@ -1,1 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Asterisk wildcard selector */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace, "Roboto Condensed", sans-serif;
+}
+
+/* General Styles */
+body {
+    text-align: center;
+    background-color: #000
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+#title-box {
+    padding: 45px 0;
+}
+
+.heading {
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    font-size: 1.7em;
+    letter-spacing: 0.2rem;
+    align-items: center;
+}
+
+h1 {
+
+}
+
+.logo {
+    overflow: auto;
+}
