@@ -30,10 +30,19 @@
         </div>
         <div id="menu-box">
             <div class="start-box">
-
+                <button class="btn-start" aria-label="Link to start the game">Start</button>
             </div>
+            <!-- Opens The Modal -->
             <div class="how-to-box">
-
+                <button class="btn-dialog-on" aria-label="Button opens a dialog box with game instructions">?</button>
+                <dialog class="dialog-box" id="dialog-box" aria-label="Dialog box">
+                    <h2 id="dialog-heading">Instructions</h2>
+                    <p>You have 15 seconds to match the colors by their text context.</p>
+                    <br>
+                    <p>Remember, focus on what you read, not at what you see!</p>
+                    <button class="btn-dialog-off"
+                        aria-label="Button closes the dialog box with game instructions">Close</button>
+                </dialog>
             </div>
 
         </div>
