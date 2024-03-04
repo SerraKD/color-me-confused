@@ -86,19 +86,24 @@ h1 {
 }
 
 /* Styles dialog box */
+dialog:modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
 .dialog-box {
     padding: 5px;
     border-color: #FA7305;
     border-style: dotted;
     border-radius: 15px;
     border-width: medium;
-    position: relative;
-    margin: 20px 30px;
 }
 
 #dialog-heading {
     font-size: x-large;
-    padding: 10px 0;
+    padding-top: 10px;
 }
 
 .dialog-box p {
