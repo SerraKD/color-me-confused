@@ -107,7 +107,7 @@ dialog:modal {
 }
 
 .dialog-box p {
-    padding: 5px 0;
+    padding: 15px 5px;
     font-family: roboto condensed;
     font-size: large;
 }
