@@ -60,6 +60,10 @@ h1 {
     cursor: pointer;
 }
 
+.start-box {
+    padding: 25px 0;
+}
+
 /* Styles how to play button */
 .btn-dialog-on {
     font-family: roboto condensed;
