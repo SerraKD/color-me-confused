@@ -36,11 +36,47 @@ body {
 h1 {
     margin-bottom: 0px;
     margin-top: 0px;
-    
+
 }
 
 .logo {
     overflow: auto;
     padding-right: 30px;
     padding-left: 15px;
+}
+
+/* Styles start button */
+.btn-start {
+    font-family: roboto condensed;
+    border-radius: 15px;
+    padding: 4px 8px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    border-style: ridge;
+    font-size: x-large;
+    color: #9C0000;
+    border-color: #42FF00;
+    border-width: medium;
+    cursor: pointer;
+}
+
+/* Styles how to play button */
+.btn-dialog-on {
+    font-family: roboto condensed;
+    border-radius: 15px;
+    padding: 4px 8px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    border-style: ridge;
+    font-size: x-large;
+    color: #9C0000;
+    border-color: #42FF00;
+    border-width: medium;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+.btn-start:hover,
+.btn-dialog-on:hover {
+    background-color: #E9FFB1;
 }
