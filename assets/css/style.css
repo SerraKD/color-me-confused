@@ -80,3 +80,37 @@ h1 {
 .btn-dialog-on:hover {
     background-color: #E9FFB1;
 }
+
+/* Styles dialog box */
+.dialog-box {
+    padding: 5px;
+    border-color: #FA7305;
+    border-style: dotted;
+    border-radius: 15px;
+    border-width: medium;
+    position: relative;
+    margin: 20px 30px;
+}
+
+#dialog-heading {
+    font-size: x-large;
+    padding: 10px 0;
+}
+
+.dialog-box p {
+    padding: 5px 0;
+}
+
+.btn-dialog-off {
+    font-family: roboto condensed;
+    border-radius: 15px;
+    padding: 4px 8px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-style: ridge;
+    font-size: large;
+    color: #9C0000;
+    border-color: #42FF00;
+    border-width: medium;
+    cursor: pointer;
+}
