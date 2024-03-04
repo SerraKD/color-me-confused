@@ -17,32 +17,26 @@ body {
 .landing-page {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 0;
 }
 
 #title-box {
     padding: 45px 0;
     display: flex;
-    align-items: center
+    align-items: center;
+    flex-direction: column;
 }
 
 .heading {
     color: #ffffff;
-    font-size: 1.7em;
+    font-size: 1.9em;
     letter-spacing: 0.2rem;
-}
-
-h1 {
-    margin-bottom: 0px;
-    margin-top: 0px;
-
+    padding-top: 15px;
 }
 
 .logo {
     overflow: auto;
-    padding-right: 30px;
-    padding-left: 15px;
+    padding: 10px 15px;
 }
 
 /* Styles start button */
