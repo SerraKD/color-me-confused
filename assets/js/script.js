@@ -6,12 +6,13 @@ startButton.addEventListener('click', startGame);
 // Event listener for how to button, opens & closes dialog box https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal
 const howToButton = document.getElementById('btn-dialog-on');
 const closeDialog = document.getElementById('btn-dialog-off');
-const dialog = document.getElementById('how-to-box');
+const dialog = document.getElementById('dialog-box');
 
-howToButton.addEventListener("click", () => {
-    dialog.showDialog();
+howToButton.addEventListener('click', () => {
+    dialog.showModal();
 });
-closeDialog.addEventListener("click", () => {
+
+closeDialog.addEventListener('click', () => {
     dialog.close();
 });
 
