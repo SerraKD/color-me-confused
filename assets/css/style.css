@@ -145,16 +145,18 @@ dialog:modal {
     justify-content: space-evenly;
 }
 
-.answer-box span {
+.answer-box button {
     font-family: roboto condensed;
-    border-radius: 15px;
-    padding: 6px 12px;
+    border-radius: 29px;
+    padding: 10px 11px;
     letter-spacing: 1px;
     font-weight: 900;
     border-style: double;
+    border-color: inherit;
+    cursor: pointer;
 }
 
-/* https://www.w3schools.com/css/css3_gradients.asp */
+/* adds gradient effect to buttons https://www.w3schools.com/css/css3_gradients.asp */
 .ans-one {
     background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
 }
@@ -169,4 +171,8 @@ dialog:modal {
 
 .ans-four {
     background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(24, 249, 95, 1));
+}
+
+.btn:hover {
+    font-size: large;
 }
