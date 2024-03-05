@@ -123,8 +123,22 @@ dialog:modal {
 /* Styles game area */
 .game-area {
     display: flex;
-    background-color: #ffffff;
     flex-direction: column;
+    min-height: 35vh;
+    border-radius: 60px;
+    border-style: groove;
+    border-color: #ffffff;
+    border-width: thick;
+    justify-content: space-around;
+}
+
+.game-area h2 {
+    display: none;
+}
+
+.question-box {
+    border-radius: 30px;
+    color: #ffffff;
 }
 
 /* To Hide game area untill start button clicked */
