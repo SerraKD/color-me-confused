@@ -149,7 +149,7 @@ dialog:modal {
     font-family: roboto condensed;
     border-radius: 15px;
     padding: 6px 12px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-weight: 900;
     border-style: double;
 }
