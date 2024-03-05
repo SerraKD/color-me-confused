@@ -119,3 +119,20 @@ dialog:modal {
     border-width: medium;
     cursor: pointer;
 }
+
+/* Styles game area */
+.game-area {
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+}
+
+/* To Hide game area untill start button clicked */
+.hide {
+    display: none;
+}
+
+/* To Unhide game area when start button clicked */
+.unhide {
+    display: block;
+}
