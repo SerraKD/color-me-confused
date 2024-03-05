@@ -52,8 +52,8 @@ const questions = [{
             text: 'Red',
             correct: false
         }
-    ],
-
+    ]
+}, {
     question: 'BLUE',
     answers: [{
             text: 'Blue',
@@ -63,8 +63,8 @@ const questions = [{
             text: 'Green',
             correct: false
         }
-    ],
-
+    ]
+}, {
     question: 'GREEN',
     answers: [{
             text: 'Green',
@@ -74,8 +74,8 @@ const questions = [{
             text: 'Yellow',
             correct: false
         }
-    ],
-
+    ]
+}, {
     question: 'RED',
     answers: [{
             text: 'Red',
@@ -86,4 +86,4 @@ const questions = [{
             correct: false
         }
     ]
-}]
+}];
