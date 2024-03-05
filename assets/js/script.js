@@ -16,8 +16,11 @@ closeDialog.addEventListener('click', () => {
     dialog.close();
 });
 
-// Starts the game
+const menuBox = document.getElementById('menu-box');
+
+// Starts the game & hides the start and how to buttons
 function startGame() {
+    menuBox.classList.add("hide");
 
 };
 
