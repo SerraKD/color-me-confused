@@ -136,3 +136,37 @@ dialog:modal {
 .unhide {
     display: block;
 }
+
+/* Styles Answers */
+.answer-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.answer-box span {
+    font-family: roboto condensed;
+    border-radius: 15px;
+    padding: 6px 12px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    border-style: double;
+}
+
+/* https://www.w3schools.com/css/css3_gradients.asp */
+.ans-one {
+    background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+}
+
+.ans-two {
+    background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 239, 0, 1));
+}
+
+.ans-three {
+    background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(24, 99, 254, 1));
+}
+
+.ans-four {
+    background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(24, 249, 95, 1));
+}
