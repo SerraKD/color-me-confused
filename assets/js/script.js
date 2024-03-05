@@ -18,9 +18,13 @@ closeDialog.addEventListener('click', () => {
 
 const menuBox = document.getElementById('menu-box');
 
+// to make game area visible & hiding menu buttons https://www.w3schools.com/jsref/met_document_queryselector.asp
+const gameArea = document.querySelector('.game-area');
+
 // Starts the game & hides the start and how to buttons
 function startGame() {
     menuBox.classList.add("hide");
+    gameArea.classList.remove("hide");
 
 };
 
