@@ -32,3 +32,50 @@ function startGame() {
 function selectAnswer() {
     // function getNextQuestion() {}
 };
+
+// create questions
+const questions = [{
+    question: 'YELLOW',
+    answers: [{
+            text: 'Yellow',
+            correct: true
+        },
+        {
+            text: 'Red',
+            correct: false
+        }
+    ],
+
+    question: 'BLUE',
+    answers: [{
+            text: 'Blue',
+            correct: true
+        },
+        {
+            text: 'Green',
+            correct: false
+        }
+    ],
+
+    question: 'GREEN',
+    answers: [{
+            text: 'Green',
+            correct: true
+        },
+        {
+            text: 'Yellow',
+            correct: false
+        }
+    ],
+
+    question: 'RED',
+    answers: [{
+            text: 'Red',
+            correct: true
+        },
+        {
+            text: 'Blue',
+            correct: false
+        }
+    ]
+}]
