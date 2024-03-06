@@ -157,6 +157,8 @@ dialog:modal {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 130px;
 }
 
 .answer-box button {
@@ -168,23 +170,28 @@ dialog:modal {
     border-style: double;
     border-color: inherit;
     cursor: pointer;
+    font-size: x-large;
 }
 
 /* adds gradient effect to buttons https://www.w3schools.com/css/css3_gradients.asp */
 .ans-one {
     background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+    flex: 2 5 100px;
 }
 
 .ans-two {
     background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(255, 239, 0, 1));
+    flex: 2 5 100px;
 }
 
 .ans-three {
     background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(24, 99, 254, 1));
+    flex: 2 5 100px;
 }
 
 .ans-four {
     background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(24, 249, 95, 1));
+    flex: 2 5 100px;
 }
 
 .btn:hover {
