@@ -37,6 +37,7 @@ body {
 .logo {
     overflow: auto;
     padding: 10px 15px;
+    cursor: pointer;
 }
 
 /* Styles start button */
