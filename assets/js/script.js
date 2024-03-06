@@ -41,6 +41,17 @@ function startGame() {
 
 };
 
+// * get the next color question
+const questionElm = document.getElementById('question-box');
+
+function viewQuestion(question) {
+    questionElm.innerText = question.question;
+}
+
+function getNextQuestion() {
+    viewQuestion(randomQuestion[presentQuestion]);
+}
+
 // Gets to next question automatically when picked an answer
 function selectAnswer() {
     // when answer is selected, move to to next question
