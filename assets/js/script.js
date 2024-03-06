@@ -52,12 +52,25 @@ function getNextQuestion() {
     viewQuestion(randomQuestion[presentQuestion]);
 }
 
+// ADD TIMER TO GAME!! 
+
 // Gets to next question automatically when picked an answer
 function selectAnswer() {
-    // when answer is selected, move to to next question
-    getNextQuestion();
+    const answerButtons = document.querySelectorAll('#answer-box button');
+    answerButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Add check answer here
+            // when answer is selected, move to to next question
+            presentQuestion++;
+            if (presentQuestion < randomQuestion.length) {
+                getNextQuestion();
+            } else {
+                //gameover
+            }
+        });
 
-};
+    });
+}
 
 // create questions
 const questions = [{
