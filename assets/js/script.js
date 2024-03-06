@@ -3,6 +3,13 @@ const startButton = document.getElementById('btn-start');
 
 startButton.addEventListener('click', startGame);
 
+//  Event listener for Logo, returns to home page
+const logo = document.getElementById('logo');
+
+logo.addEventListener('click', () => {
+    window.location.assign("./index.html");
+});
+
 // Event listener for how to button, opens & closes dialog box https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal
 const howToButton = document.getElementById('btn-dialog-on');
 const closeDialog = document.getElementById('btn-dialog-off');
