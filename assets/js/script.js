@@ -50,6 +50,7 @@ function viewQuestion(question) {
 
 function getNextQuestion() {
     viewQuestion(randomQuestion[presentQuestion]);
+    selectAnswer();
 }
 
 // ADD TIMER TO GAME!! 
@@ -60,15 +61,14 @@ function selectAnswer() {
     answerButtons.forEach(button => {
         button.addEventListener('click', () => {
             // Add check answer here
-            // when answer is selected, move to to next question
+            // when answer is selected, move to the next question
             presentQuestion++;
             if (presentQuestion < randomQuestion.length) {
                 getNextQuestion();
             } else {
-                //gameover
+                // game over
             }
         });
-
     });
 }
 
