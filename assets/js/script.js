@@ -28,7 +28,7 @@ const menuBox = document.getElementById('menu-box');
 // to make game area visible & hiding menu buttons https://www.w3schools.com/jsref/met_document_queryselector.asp
 const gameArea = document.querySelector('.game-area');
 
-let randomQuestion, presentQuestion
+let randomQuestion, presentQuestion;
 
 // Starts the game & hides the start and how to buttons
 function startGame() {
@@ -36,7 +36,7 @@ function startGame() {
     gameArea.classList.remove("hide");
     randomQuestion = questions.sort(() => Math.random() - 0.5);
     presentQuestion = 0;
-    console.log(randomQuestion)
+    console.log(randomQuestion);
     getNextQuestion();
 
 };
