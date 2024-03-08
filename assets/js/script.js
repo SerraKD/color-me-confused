@@ -56,6 +56,7 @@ function selectAnswer() {
         button.addEventListener('click', () => {
             let selectedAnswer = button.innerText;
             // Add check answer here
+            checkCorrectAnswer((randomQuestion[presentQuestion]), selectedAnswer);
             // when answer is selected, move to the next question
             presentQuestion++;
             if (presentQuestion < randomQuestion.length) {
