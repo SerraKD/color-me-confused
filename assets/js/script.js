@@ -1,20 +1,23 @@
-// Event listener for Start button
 const startButton = document.getElementById('btn-start');
-
-startButton.addEventListener('click', startGame);
-
-//  Event listener for Logo, returns to home page
 const logo = document.getElementById('logo');
-
-logo.addEventListener('click', () => {
-    window.location.assign("./index.html");
-});
-
-// Event listener for how to button, opens & closes dialog box https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal
 const howToButton = document.getElementById('btn-dialog-on');
 const closeDialog = document.getElementById('btn-dialog-off');
 const dialog = document.getElementById('dialog-box');
+const menuBox = document.getElementById('menu-box');
+const questionElm = document.getElementById('question-box');
 
+// to make game area visible & hiding menu buttons https://www.w3schools.com/jsref/met_document_queryselector.asp
+const gameArea = document.querySelector('.game-area');
+
+let randomQuestion, presentQuestion;
+
+// Event listener for Start button
+startButton.addEventListener('click', startGame);
+//  Event listener for Logo, returns to home page
+logo.addEventListener('click', () => {
+    window.location.assign("./index.html");
+});
+// Event listener for how to button, opens & closes dialog box https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal
 howToButton.addEventListener('click', () => {
     dialog.showModal();
 });
@@ -22,13 +25,6 @@ howToButton.addEventListener('click', () => {
 closeDialog.addEventListener('click', () => {
     dialog.close();
 });
-
-const menuBox = document.getElementById('menu-box');
-
-// to make game area visible & hiding menu buttons https://www.w3schools.com/jsref/met_document_queryselector.asp
-const gameArea = document.querySelector('.game-area');
-
-let randomQuestion, presentQuestion;
 
 // Starts the game & hides the start and how to buttons
 function startGame() {
@@ -42,8 +38,6 @@ function startGame() {
 };
 
 // * get the next color question
-const questionElm = document.getElementById('question-box');
-
 function viewQuestion(question) {
     questionElm.innerText = question.question;
 }
