@@ -54,6 +54,7 @@ function selectAnswer() {
     const answerButtons = document.querySelectorAll('#answer-box button');
     answerButtons.forEach(button => {
         button.addEventListener('click', () => {
+            let selectedAnswer = button.innerText;
             // Add check answer here
             // when answer is selected, move to the next question
             presentQuestion++;
@@ -65,6 +66,19 @@ function selectAnswer() {
         });
     });
 }
+
+// check answers 
+function checkCorrectAnswer(question, selectedAnswer) {
+    if (selectedAnswer === question.question) {
+        console.log('correct');
+        // add increase score
+    } else {
+        console.log('incorrect');
+        // add deccrease score
+    }
+
+}
+
 
 // create questions
 const questions = [{
