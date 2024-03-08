@@ -34,7 +34,17 @@ function startGame() {
     presentQuestion = 0;
     console.log(randomQuestion);
     getNextQuestion();
+    const answerButtons = document.querySelectorAll('#answer-box button');
+    answerButtons.forEach(button => {
+        console.log(button);
+        button.addEventListener('click', () => {
+            let selectedAnswer = button.innerText;
+            // Add check answer here
+            checkCorrectAnswer((randomQuestion[presentQuestion]), selectedAnswer);
+            selectAnswer();
+        })
 
+    })
 };
 
 // * get the next color question
@@ -44,29 +54,22 @@ function viewQuestion(question) {
 
 function getNextQuestion() {
     viewQuestion(randomQuestion[presentQuestion]);
-    selectAnswer();
+    console.log('get next question running');
 }
 
 // ADD TIMER TO GAME!! 
 
 // Gets to next question automatically when picked an answer
 function selectAnswer() {
-    const answerButtons = document.querySelectorAll('#answer-box button');
-    answerButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            let selectedAnswer = button.innerText;
-            // Add check answer here
-            checkCorrectAnswer((randomQuestion[presentQuestion]), selectedAnswer);
-            // when answer is selected, move to the next question
-            presentQuestion++;
-            if (presentQuestion < randomQuestion.length) {
-                getNextQuestion();
-            } else {
-                // game over
-            }
-        });
-    });
-}
+    // when answer is selected, move to the next question
+    presentQuestion++;
+    console.log(presentQuestion);
+    if (presentQuestion < randomQuestion.length) {
+        getNextQuestion();
+    } else {
+        // game over
+    }
+};
 
 // check answers 
 function checkCorrectAnswer(question, selectedAnswer) {
