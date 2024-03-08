@@ -68,47 +68,11 @@ function selectAnswer() {
 
 // create questions
 const questions = [{
-    question: 'YELLOW',
-    answers: [{
-            text: 'Yellow',
-            correct: true
-        },
-        {
-            text: 'Red',
-            correct: false
-        }
-    ]
+    question: 'Yellow',
 }, {
-    question: 'BLUE',
-    answers: [{
-            text: 'Blue',
-            correct: true
-        },
-        {
-            text: 'Green',
-            correct: false
-        }
-    ]
+    question: 'Blue',
 }, {
-    question: 'GREEN',
-    answers: [{
-            text: 'Green',
-            correct: true
-        },
-        {
-            text: 'Yellow',
-            correct: false
-        }
-    ]
+    question: 'Green',
 }, {
-    question: 'RED',
-    answers: [{
-            text: 'Red',
-            correct: true
-        },
-        {
-            text: 'Blue',
-            correct: false
-        }
-    ]
+    question: 'Red',
 }];
