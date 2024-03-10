@@ -198,3 +198,9 @@ dialog:modal {
 .btn:hover {
     font-size: large;
 }
+
+#user-scores {
+    padding-inline: 20px;
+    color: #ffffff;
+    display: inline-block;
+}
