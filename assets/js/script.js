@@ -43,7 +43,6 @@ function startGame() {
             checkCorrectAnswer((randomQuestion[presentQuestion]), selectedAnswer);
             selectAnswer();
         })
-
     })
 };
 
@@ -71,18 +70,28 @@ function selectAnswer() {
     }
 };
 
+// count scores
+let correctScore = 0;
+let incorrectScore = 0;
+
+const correctScoreElm = document.querySelector('#correct')
+const incorrectScoreElm = document.querySelector('#incorrect')
+
 // check answers 
 function checkCorrectAnswer(question, selectedAnswer) {
     if (selectedAnswer === question.question) {
         console.log('correct');
         // add increase score
+        correctScore++;
+        correctScoreElm.textContent = correctScore;
     } else {
         console.log('incorrect');
         // add deccrease score
+        incorrectScore++;
+        incorrectScoreElm.textContent = incorrectScore;
     }
 
 }
-
 
 // create questions
 const questions = [{
