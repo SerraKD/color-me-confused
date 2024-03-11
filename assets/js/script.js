@@ -26,14 +26,26 @@ closeDialog.addEventListener('click', () => {
     dialog.close();
 });
 
+const gameTimer = 15000;
+let timer;
+
 // Starts the game & hides the start and how to buttons
 function startGame() {
     menuBox.classList.add("hide");
     gameArea.classList.remove("hide");
     randomQuestion = questions.sort(() => Math.random() - 0.5);
     presentQuestion = 0;
+    // adds timer and gives user 15 seconds to complete whole game https://www.w3schools.com/jsref/met_win_settimeout.asp
+    timer = setTimeout(() => {
+        console.log('Game Over');
+        // shows user that the time limit reached, game is over
+        gameArea.classList.add("hide");
+        const timeUp = document.createElement('p');
+        timeUp.innerText = 'Time is up, You lost.'
+        document.body.appendChild(timeUp);
+        timeUp.style.color = '#ffffff';
+    }, gameTimer);
     console.log(randomQuestion);
-    timer;
     getNextQuestion();
     const answerButtons = document.querySelectorAll('#answer-box button');
     answerButtons.forEach(button => {
@@ -102,20 +114,6 @@ function checkCorrectAnswer(question, selectedAnswer) {
     }
 
 }
-
-// adds timer and gives user 15 seconds to complete whole game https://www.w3schools.com/jsref/met_win_settimeout.asp
-const gameTimer = 15000;
-
-const timer = setTimeout(() => {
-    console.log('Game Over');
-    // shows user that the time limit reached, game is over
-    gameArea.classList.add("hide");
-    const timeUp = document.createElement('p');
-    timeUp.innerText = 'Time is up, You lost.'
-    document.body.appendChild(timeUp);
-    timeUp.style.color = '#ffffff';
-}, gameTimer);
-
 
 
 // create questions
