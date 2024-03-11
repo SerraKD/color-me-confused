@@ -41,6 +41,10 @@ function startGame() {
             let selectedAnswer = button.innerText;
             // Add check answer here
             checkCorrectAnswer((randomQuestion[presentQuestion]), selectedAnswer);
+            // removes event listener for answer buttons so user can only select one answer per question
+            button.removeEventListener('click', () => {
+                selectAnswer();
+            });
             selectAnswer();
         })
     })
