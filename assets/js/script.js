@@ -69,7 +69,14 @@ function selectAnswer() {
     if (presentQuestion < randomQuestion.length) {
         getNextQuestion();
     } else {
-        // game over
+        // inform user game over, clear timer and remove game area
+        clearInterval(timer);
+        gameArea.classList.add("hide");
+        const gameOver = document.createElement('p');
+        gameOver.innerText = 'Game Over'
+        document.body.appendChild(gameOver);
+        gameOver.style.color = '#ffffff';
+        // add final scores!
     }
 };
 
