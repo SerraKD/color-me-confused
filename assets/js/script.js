@@ -33,6 +33,7 @@ function startGame() {
     randomQuestion = questions.sort(() => Math.random() - 0.5);
     presentQuestion = 0;
     console.log(randomQuestion);
+    timer;
     getNextQuestion();
     const answerButtons = document.querySelectorAll('#answer-box button');
     answerButtons.forEach(button => {
@@ -59,8 +60,6 @@ function getNextQuestion() {
     viewQuestion(randomQuestion[presentQuestion]);
     console.log('get next question running');
 }
-
-// ADD TIMER TO GAME!! 
 
 // Gets to next question automatically when picked an answer
 function selectAnswer() {
@@ -96,6 +95,14 @@ function checkCorrectAnswer(question, selectedAnswer) {
     }
 
 }
+
+// adds timer and gives user 15 seconds to complete whole game https://www.w3schools.com/jsref/met_win_settimeout.asp
+const gameTimer = 15000;
+
+const timer = setTimeout(() => {
+    console.log('Game Over');
+    //add game over code here!!!!!
+}, gameTimer);
 
 // create questions
 const questions = [{
