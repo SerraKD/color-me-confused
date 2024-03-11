@@ -101,8 +101,15 @@ const gameTimer = 15000;
 
 const timer = setTimeout(() => {
     console.log('Game Over');
-    //add game over code here!!!!!
+    // shows user that the time limit reached, game is over
+    gameArea.classList.add("hide");
+    const timeUp = document.createElement('p');
+    timeUp.innerText = 'Time is up, You lost.'
+    document.body.appendChild(timeUp);
+    timeUp.style.color = '#ffffff';
 }, gameTimer);
+
+
 
 // create questions
 const questions = [{
