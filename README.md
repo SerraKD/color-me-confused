@@ -144,6 +144,9 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 ### Features Left to Implement
 
+- In the future, I would like to add a game difficulty option to let users challenge themselves further.
+- Adding a multiplayer option for two users playing the game and testing their cognitive skills at the same time would create more challenge and competition. The user who finishes first with the highest score will win the game.
+
 ## Testing
 
 ### __Manual Testing__
