@@ -93,11 +93,7 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 - The logo is consistent throughout all of the game pages.
 
-| Screen Size | Image |
-| :---- | :----: |
-| Small Screen | ![Logo image small screens]() |
-| Medium Screen | ![Logo image medium screens]() |
-| Large Screen | ![Logo image large screens]() |
+ ![Logo & heading image](docs-readme/logo-heading.png) |
 
 ### __Landing Page__
 
@@ -113,7 +109,7 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 - When clicked, the start button takes the user to the game page and it has a hover effect.
 
-![Start Button image]()
+![Start Button image](docs-readme/startbutton-img.png)
 
 - __Instruction Button__
 
@@ -121,7 +117,7 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 - When clicked, the button opens up a modal that includes instructions for the game and a close modal button.
 
-![Instruction Button image]()
+![Instruction Button image](docs-readme/instructionbutton-img.png)
 
 - __Modal__
 
