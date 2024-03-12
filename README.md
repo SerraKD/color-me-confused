@@ -1,6 +1,6 @@
 # Color Me Confused!
 
-![Responsive design]()
+![Responsive design](docs-readme/amiresponsive.png)
 
 ## Table Of Contents
 
@@ -59,8 +59,8 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 
 | Page  | Wireframe |
 | ---- | :----: |
-| Landing | ![Landing Page wireframe image]() |
-| Game | ![Game Page wireframe image]() |
+| Landing | ![Landing Page wireframe image](docs-readme/balsamiq-landingpage.png) |
+| Game | ![Game Page wireframe image](docs-readme/balsamig-gamearea.png) |
 
 
 ## Color Scheme
@@ -69,9 +69,11 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 - While keeping the color scheme minimalistic, I wanted the start and instruction button colors to match the logo.
 - For the answer buttons, I used CSS gradients to ensure the color texts on the buttons are easily readable.
 
+![Answer Buttons Gradient efffect](docs-readme/answerbutton-gradient.png)
+
 The __Contrast Grid__ is used to ensure the website is accessible.
 
-![Contrast Grid colors]()
+![Contrast Grid colors](docs-readme/contrastgrid.png)
 
 ## Features
 
@@ -103,9 +105,9 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 | Screen Size | Image |
 | :---- | :----: |
-| Small Screen | ![Landing Page image small screens]() |
-| Medium Screen | ![Landing Page image medium screens]() |
-| Large Screen | ![Landing Page image large screens]() |
+| Small Screen | ![Landing Page image small screens](docs-readme/landingpage-small.png) |
+| Medium Screen | ![Landing Page image medium screens](docs-readme/landingpage-medium.png) |
+| Large Screen | ![Landing Page image large screens](docs-readme/landingpage-large.png) |
 
 - __Start Button__
 
@@ -129,9 +131,9 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 | Screen Size | Image |
 | :---- | :----: |
-| Small Screen | ![Modal image small screens]() |
-| Medium Screen | ![Modal image medium screens]() |
-| Large Screen | ![Modal image large screens]() |
+| Small Screen | ![Modal image small screens](docs-readme/modal-small.png) |
+| Medium Screen | ![Modal image medium screens](docs-readme/modal-medium.png) |
+| Large Screen | ![Modal image large screens](docs-readme/modal-large.png) |
 
 ### __Game Page__
 
@@ -147,9 +149,9 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 | Screen Size | Image |
 | :---- | :----: |
-| Small Screen | ![Game Page image small screens]() |
-| Medium Screen | ![Game Page image medium screens]() |
-| Large Screen | ![Game Page image large screens]() |
+| Small Screen | ![Game Page image small screens](docs-readme/gamearea-small.png) |
+| Medium Screen | ![Game Page image medium screens](docs-readme/gamearea-medium.png) |
+| Large Screen | ![Game Page image large screens](docs-readme/gamearea-large.png) |
 
 ### __Time Up Page__
 
@@ -159,9 +161,9 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 | Screen Size | Image |
 | :---- | :----: |
-| Small Screen | ![Time Up Page image small screens]() |
-| Medium Screen | ![Time Up Page image medium screens]() |
-| Large Screen | ![Time Up Page image large screens]() |
+| Small Screen | ![Time Up Page image small screens](docs-readme/timeup-small.png) |
+| Medium Screen | ![Time Up Page image medium screens](docs-readme/timeup-medium.png) |
+| Large Screen | ![Time Up Page image large screens](docs-readme/timeup-large.png) |
 
 ### __Game Over Page__
 
@@ -171,9 +173,9 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 | Screen Size | Image |
 | :---- | :----: |
-| Small Screen | ![Game Over Page image small screens]() |
-| Medium Screen | ![Game Over Page image medium screens]() |
-| Large Screen | ![Game Over Page image large screens]() |
+| Small Screen | ![Game Over Page image small screens](docs-readme/gameover-small.png) |
+| Medium Screen | ![Game Over Page image medium screens](docs-readme/gameover-medium.png) |
+| Large Screen | ![Game Over Page image large screens](docs-readme/gameover-large.png) |
 
 ### Features Left to Implement
 
