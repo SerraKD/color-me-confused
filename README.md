@@ -192,7 +192,32 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 ## Deployment
 
+I used [Gitpod](https://gitpod.io/) to develop this website.
+
+I deployed the website in early stages of develepment on [GitHub](https://github.com/) with following steps;
+
+1. Log in to Github and go to projects' repository.
+2. Find the Settings on the top of the repository and click.
+3. On the left side of the screen, find Pages and select.
+4. Under the Branch section, click on the dropdown that says none, and pick "Main" and click on save button.
+4. The page is now deployed.
+
+Visit the deployed website [here](https://serrakd.github.io/color-me-confused/).
+
 ## Local Deployment
+
+__Fork__:
+
+1. Log in to Github and go to projects' repository.
+2. On the top right side of the page, clik on _fork_ button.
+
+__Clone__:
+
+1. Log in to Github and go to projects' repository.
+2. On the top of the file lists, click on _Code_ button.
+3. Whether you want to use HTTPS, SSH key or Github CLI select it, and then click on copy.
+4. Open the terminal, type **git clone** and paste the URL copied.
+5. Press enter and local clone is now created.
 
 ## Credits
 
