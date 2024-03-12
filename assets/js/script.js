@@ -42,37 +42,39 @@ closeDialog.addEventListener('click', () => {
     dialog.close();
 });
 
-// Starts the game & hides the start and how to buttons
+// Starts the game & hides the start and how to buttons https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
 function startGame() {
-    menuBox.classList.add("hide");
-    gameArea.classList.remove("hide");
-    randomQuestion = questions.sort(() => Math.random() - 0.5);
-    presentQuestion = 0;
-    // adds timer and gives user 15 seconds to complete whole game https://www.w3schools.com/jsref/met_win_settimeout.asp
-    timer = setTimeout(() => {
-        console.log('Game Over');
-        // shows user that the time limit reached, game is over
-        gameArea.classList.add("hide");
-        const timeUp = document.createElement('p');
-        timeUp.innerText = 'Time is up, You lost.';
-        document.body.appendChild(timeUp);
-        timeUp.style.color = '#ffffff';
-    }, gameTimer);
-    console.log(randomQuestion);
-    getNextQuestion();
-    const answerButtons = document.querySelectorAll('#answer-box button');
-    answerButtons.forEach(button => {
-        console.log(button);
-        button.addEventListener('click', () => {
-            let selectedAnswer = button.innerText;
-            checkCorrectAnswer((randomQuestion[presentQuestion]), selectedAnswer);
-            // removes event listener for answer buttons so user can only select one answer per question
-            button.removeEventListener('click', () => {
+    try {
+        menuBox.classList.add("hide");
+        gameArea.classList.remove("hide");
+        randomQuestion = questions.sort(() => Math.random() - 0.5);
+        presentQuestion = 0;
+        // adds timer and gives user 15 seconds to complete whole game https://www.w3schools.com/jsref/met_win_settimeout.asp
+        timer = setTimeout(() => {
+            console.log('Game Over');
+            // shows user that the time limit reached, game is over
+            gameArea.classList.add("hide");
+            const timeUp = document.createElement('p');
+            timeUp.innerText = 'Time is up, You lost.';
+            document.body.appendChild(timeUp);
+            timeUp.style.color = '#ffffff';
+        }, gameTimer);
+        console.log(randomQuestion);
+        getNextQuestion();
+        const answerButtons = document.querySelectorAll('#answer-box button');
+        answerButtons.forEach(button => {
+            console.log(button);
+            button.addEventListener('click', () => {
+                let selectedAnswer = button.innerText;
+                checkCorrectAnswer((randomQuestion[presentQuestion]), selectedAnswer);
+                // removes event listener for answer buttons so user can only select one answer per question
+                button.removeEventListener('click', selectAnswer);
                 selectAnswer();
             });
-            selectAnswer();
         });
-    });
+    } catch (error) {
+        console.error('error');
+    }
 }
 
 // view current question
