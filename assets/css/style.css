@@ -204,3 +204,18 @@ dialog:modal {
     color: #ffffff;
     display: inline-block;
 }
+
+/* media query for medium screens and larger*/
+@media (min-width: 307px) {
+    .answer-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .answer-box button {
+        padding: 10px 8px;
+    }
+}
