@@ -88,7 +88,11 @@ function selectAnswer() {
         gameOver.innerText = 'Game Over'
         document.body.appendChild(gameOver);
         gameOver.style.color = '#ffffff';
-        // add final scores!
+        // template strings to show user their score
+        const finalScore = document.createElement('p');
+        finalScore.innerText = `Your Score is: ${correctScore}`
+        document.body.appendChild(finalScore);
+        finalScore.style.color = '#ffffff';
     }
 };
 
