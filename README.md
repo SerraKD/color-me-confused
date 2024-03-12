@@ -54,7 +54,24 @@ As a user, i want to;
 
 ## Wireframes
 
+In the planning stage, I used Balsamiq wireframes to create the basic layout of the website. The final design evolved more than planned.
+
+
+| Page  | Wireframe |
+| ---- | :----: |
+| Landing | ![Landing Page wireframe image]() |
+| Game | ![Game Page wireframe image]() |
+
+
 ## Color Scheme
+
+- I decided to have a dark black background to balance the color game and have an intriguing minimalistic design.
+- While keeping the color scheme minimalistic, I wanted the start and instruction button colors to match the logo.
+- For the answer buttons, I used CSS gradients to ensure the color texts on the buttons are easily readable.
+
+The __Contrast Grid__ is used to ensure the website is accessible.
+
+![Contrast Grid colors]()
 
 ## Features
 
