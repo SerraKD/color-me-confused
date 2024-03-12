@@ -11,13 +11,12 @@ const gameArea = document.querySelector('.game-area');
 let randomQuestion, presentQuestion;
 const gameTimer = 15000;
 let timer;
-// count scores
 let correctScore = 0;
 let incorrectScore = 0;
 const correctScoreElm = document.querySelector('#correct');
 const incorrectScoreElm = document.querySelector('#incorrect');
 
-// create questions
+// create questions array
 const questions = [{
     question: 'Yellow',
 }, {
@@ -30,7 +29,7 @@ const questions = [{
 
 // Event listener for Start button
 startButton.addEventListener('click', startGame);
-//  Event listener for Logo, returns to home page
+// Event listener for Logo, returns to home page
 logo.addEventListener('click', () => {
     window.location.assign("./index.html");
 });
@@ -42,7 +41,6 @@ howToButton.addEventListener('click', () => {
 closeDialog.addEventListener('click', () => {
     dialog.close();
 });
-
 
 // Starts the game & hides the start and how to buttons
 function startGame() {
@@ -56,7 +54,7 @@ function startGame() {
         // shows user that the time limit reached, game is over
         gameArea.classList.add("hide");
         const timeUp = document.createElement('p');
-        timeUp.innerText = 'Time is up, You lost.'
+        timeUp.innerText = 'Time is up, You lost.';
         document.body.appendChild(timeUp);
         timeUp.style.color = '#ffffff';
     }, gameTimer);
@@ -67,7 +65,6 @@ function startGame() {
         console.log(button);
         button.addEventListener('click', () => {
             let selectedAnswer = button.innerText;
-            // Add check answer here
             checkCorrectAnswer((randomQuestion[presentQuestion]), selectedAnswer);
             // removes event listener for answer buttons so user can only select one answer per question
             button.removeEventListener('click', () => {
@@ -76,13 +73,14 @@ function startGame() {
             selectAnswer();
         });
     });
-};
+}
 
-// * get the next color question
+// view current question
 function viewQuestion(question) {
     questionElm.innerText = question.question;
 }
 
+// get the next color question
 function getNextQuestion() {
     viewQuestion(randomQuestion[presentQuestion]);
     console.log('get next question running');
@@ -90,7 +88,6 @@ function getNextQuestion() {
 
 // Gets to next question automatically when picked an answer
 function selectAnswer() {
-    // when answer is selected, move to the next question
     presentQuestion++;
     console.log(presentQuestion);
     if (presentQuestion < randomQuestion.length) {
@@ -109,20 +106,17 @@ function selectAnswer() {
         document.body.appendChild(finalScore);
         finalScore.style.color = '#ffffff';
     }
-};
+}
 
 // check answers 
 function checkCorrectAnswer(question, selectedAnswer) {
     if (selectedAnswer === question.question) {
         console.log('correct');
-        // add increase score
         correctScore++;
         correctScoreElm.textContent = correctScore;
     } else {
         console.log('incorrect');
-        // add deccrease score
         incorrectScore++;
         incorrectScoreElm.textContent = incorrectScore;
     }
-
 }
