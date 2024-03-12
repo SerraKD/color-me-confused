@@ -209,7 +209,7 @@ Visit the deployed website [here](https://serrakd.github.io/color-me-confused/).
 __Fork__:
 
 1. Log in to Github and go to projects' repository.
-2. On the top right side of the page, clik on _fork_ button.
+2. On the top right side of the page, click on _fork_ button.
 
 __Clone__:
 
