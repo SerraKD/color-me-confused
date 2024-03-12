@@ -238,8 +238,33 @@ __Clone__:
 
 ## Credits
 
+- All fonts were imported from [Google Fonts](https://fonts.google.com/).
+- Wireframes made with [Balsamiq](https://balsamiq.com/).
+- Logo was created using [favicon](https://favicon.io/).
+- Information about Gradient effect in CSS from [W3schools](https://www.w3schools.com/css/css3_gradients.asp).
+- [Am I responsive?](https://ui.dev/amiresponsive) was used for responsive mockup.
+- [Eightshapes](https://contrast-grid.eightshapes.com/) was used for color contrast checking.
+- To check the grammar of all text content, I used [Grammarly](https://app.grammarly.com/).
+- [Tiny PNG](https://tinypng.com/) was used for file compression.
+- [V3C HTML](https://validator.w3.org/) used for HTML validator testing.
+- [V3C CSS](https://jigsaw.w3.org/css-validator/) used for CSS validator testing.
+- [JShint](https://jshint.com/) used for JavaScript testing.
+- [Dev Tools](https://developer.chrome.com/docs/devtools/) was used throughout the project for testing, troubleshooting, and styling.
+> Below JS documents were used as studying and reference material;
+- https://www.w3schools.com/jsref/met_document_queryselector.asp
+- https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
+- https://www.w3schools.com/jsref/met_win_settimeout.asp
+- https://stackoverflow.com/questions/42661936/whats-the-difference-between-math-random-0-5-and-math-random-0-5
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
 ### Content
 
+- The game title was created in collaboration with the amazing [Pi](https://pi.ai/).
+- All content was written by me.
+
 ### Media
+
+-  The photo used as logo and favicon taken from [Pexels](https://www.pexels.com/). [Photo by Chait Goli](https://www.pexels.com/photo/multicolored-skull-decor-1918290/).
 
 ## Acknowledgements
