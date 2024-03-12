@@ -32,9 +32,25 @@
 
 ### Site Goals
 
+- User-friendly website structure.
+- A simple but intriguing design to attract user interest.
+- A game without complex logic while still challenging and testing users' cognitive skills.
+
 ### Target Audiences
 
+- All individuals who can read and see.
+- Individuals who have interest in brain training games.
+- Individuals who are interested in testing basic cognitive skills.
+- Individuals who are looking for a simple but intriguing fun game.
+
 ### User Stories 
+
+As a user, i want to;
+
+- Have a positive and unique experience when visiting the website.
+- Have easy access to starting the game and getting instructions.
+- Play a game to have fun while testing my cognitive skills.
+- Have a smooth experience.
 
 ## Wireframes
 
