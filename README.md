@@ -184,6 +184,28 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 ### __Validator Testing__
 
+- [V3C HTML](https://validator.w3.org/) , [V3C CSS](https://jigsaw.w3.org/css-validator/)  and [JShint](https://jshint.com/) were used for validator testing.
+
+| Page | [V3C HTML](https://validator.w3.org/) | Result |
+| :----: | :----: | :----: |
+| index.html | ![Index validation result image](docs-readme/html-validator.png) |  No error found |
+
+| Page | [V3C CSS](https://jigsaw.w3.org/css-validator/) | Result |
+| :----: | :----: |  :----: |
+| style.css | ![Css validation result image](docs-readme/css-validator.png) | No error found |
+
+| Page | [JShint](https://jshint.com/) | Result |
+| :----: | :----: |  :----: |
+| script.js | ![JS validation result image](docs-readme/js-validator.png) | No error found |
+
+| *Returned Metrics For JavaScript* [JShint](https://jshint.com/) |
+| :---- |
+| There are 12 functions in this file.|
+| Function with the largest signature take 2 arguments, while the median is 0. |
+| Largest function has 14 statements in it, while the median is 2. |
+| The most complex function has a cyclomatic complexity value of 2 while the median is 1. |
+
+
 ### __Accesibility Testing__
 
 ### Fixed Bugs
@@ -194,8 +216,8 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 - Fixed by adding commas between each question object. [3d4b6a0](https://github.com/SerraKD/color-me-confused/commit/3d4b6a019261174413bbc34bdce933523fd46118)
 3. Fix the code for question element.
 - Adding forgotton id in index.html resolved the issue.[7e3e00f](https://github.com/SerraKD/color-me-confused/commit/7e3e00f0c05f69431ac0f7b92d2e972d6aba338d)
-4. Fix the code for selecting answers, add the function into get next question.
-- [84ce7d5](https://github.com/SerraKD/color-me-confused/commit/84ce7d50629622eb74ec3cd096a9577b8ab0d5b5)
+4. Fix the code for button remove event listener.
+- Event listerner for answer buttons was not being removed correctly. Removing arrow function and rewriting it as traditional function resolved the error. [b0168ac](https://github.com/SerraKD/color-me-confused/commit/b0168ac5cbc2f69a8e65f3055fa7ad2be5235409)
 5. Fix the code for button event listener and select answer by moving them into startgame function.
 - When game starts and picked answer code was running multiple times it was having unnecessary loops.  Moving the answer button event listener, check correct answer and select answer function into start game resolved the error. [eb7e7d5](https://github.com/SerraKD/color-me-confused/commit/eb7e7d56262234aa42500a1ce774e0c193c42518)
 6. Remove the manifest for favicon from index.html.
