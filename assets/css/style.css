@@ -40,6 +40,14 @@ body {
     cursor: pointer;
 }
 
+/* styles go back link in 404.html */
+#go-back {
+    color: #FFEF00;
+    padding: 20px;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
 /* Styles the restart button */
 button {
     font-family: roboto condensed;
