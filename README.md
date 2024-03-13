@@ -1,5 +1,9 @@
 # Color Me Confused!
 
+Color Me Confused! is a simple and fun brain-training game based on colors. Users can test their focus and cognitive skills while trying not to get confused by what they see but focusing on what they read.
+
+Visit the deployed website [here](https://serrakd.github.io/color-me-confused/).
+
 ![Responsive design](docs-readme/amiresponsive.png)
 
 ## Table Of Contents
@@ -186,13 +190,19 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 - [V3C HTML](https://validator.w3.org/) , [V3C CSS](https://jigsaw.w3.org/css-validator/)  and [JShint](https://jshint.com/) were used for validator testing.
 
+> HTML
+
 | Page | [V3C HTML](https://validator.w3.org/) | Result |
 | :----: | :----: | :----: |
 | index.html | ![Index validation result image](docs-readme/html-validator.png) |  No error found |
 
+> CSS
+
 | Page | [V3C CSS](https://jigsaw.w3.org/css-validator/) | Result |
 | :----: | :----: |  :----: |
 | style.css | ![Css validation result image](docs-readme/css-validator.png) | No error found |
+
+> JS
 
 | Page | [JShint](https://jshint.com/) | Result |
 | :----: | :----: |  :----: |
