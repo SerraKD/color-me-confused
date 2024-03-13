@@ -326,3 +326,6 @@ __Clone__:
 -  The photo used as logo and favicon taken from [Pexels](https://www.pexels.com/). [Photo by Chait Goli](https://www.pexels.com/photo/multicolored-skull-decor-1918290/).
 
 ## Acknowledgements
+
+- I am deeply grateful to my Mentor Rory Patrick Sheridan, for his invaluable guidance, support, and great tips.
+- Special thanks to my husband for his support and patience with me while I was learning JavaScript and preparing this project.
