@@ -68,7 +68,7 @@ In the planning stage, I used Balsamiq wireframes to create the basic layout of 
 
 ## Color Scheme
 
-- I decided to have a dark black background to balance the color game and have an intriguing minimalistic design.
+- I decided to have a dark black background to balance the color game and have an intriguing design.
 - While keeping the color scheme minimalistic, I wanted the start and instruction button colors to match the logo.
 - For the answer buttons, I used CSS gradients to ensure the color texts on the buttons are easily readable.
 
@@ -112,6 +112,8 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 - When clicked, the start button takes the user to the game page and it has a hover effect.
 
+- After user clicks on the start button, menu buttons hide and game area comes up.
+
 ![Start Button image](docs-readme/startbutton-img.png)
 
 - __Instruction Button__
@@ -124,7 +126,7 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 - __Modal__
 
-- The modal has clear but short instructions about how to play the game, information about countdown timer and gives a tip without being too obvious.
+- The modal has clear and short instructions about how to play the game, information about countdown timer and gives a tip without being too obvious.
 
 - It can be closed by clicking on the close button at the bottom of the modal.
 
@@ -140,11 +142,13 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 - The user can play the game by matching the color questions with its text content buttons.
 
+- Color questions are defined as JS arrays and comes up randomly in every game.
+
 - User can only pick one answer per question, after the answer is selected game moves on to the next question until all questions are completed.
 
 - Correct and incorrect scores are being calculated while the user is playing and can be found at the bottom center of the game area.
 
--  There is a countdown timer of 15 seconds built in the game page, so the user has to complete all the questions in the given timeline. Otherwise, it takes the user to the Time is Up page and the game is over.
+-  There is a countdown timer of 8 seconds built in the game page, so the user has to complete all the questions in the given timeline. Otherwise, game area becomes hidden and Time is Up page becomes visible.
 
 | Screen Size | Image |
 | :---- | :----: |
@@ -154,9 +158,9 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 ### __Time Up Page__
 
-- The Time Up page consists of the game logo, a paragraph that informs users that they didn't finish the game in the given timeline and that the game is over.
+- The Time Up page consists of the game logo, restart button, and a paragraph that informs users that they didn't finish the game in the given timeline so they lost.
 
-- User can easily return back to the landing page by clicking on the logo.
+- User can easily return back to the landing page by clicking on the logo or restart button.
 
 | Screen Size | Image |
 | :---- | :----: |
@@ -168,7 +172,9 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 - The Game Over page consists of the game logo, a paragraph that informs users that the game is over and shows their final score.
 
-- User can easily return back to the landing page by clicking on the logo.
+- This page can be visible only if the user finishes the game in the given timeline.
+
+- User can easily return back to the landing page by clicking on the logo or restart button.
 
 | Screen Size | Image |
 | :---- | :----: |
@@ -178,8 +184,9 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 ### __Features Left to Implement__
 
-- In the future, I would like to add a game difficulty option to let users challenge themselves further.
-- Adding a multiplayer option for two users playing the game and testing their cognitive skills at the same time would create more challenge and competition. The user who finishes first with the highest score will win the game.
+- In the future, I would like to add a game difficulty option, decreasing the timer and the increasing question amount to challenge users even further.
+- I would like to add more brain-training game options for users to pick and continue playing such as puzzles, memory cards, and sudoku.
+- Adding a multiplayer option for two users playing the game and testing their cognitive skills at the same time would create more challenge and competition. The user who finishes first with the highest score would win the game.
 
 ---
 
@@ -211,7 +218,7 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 | Page | [V3C HTML](https://validator.w3.org/) | Result |
 | :----: | :----: | :----: |
-| 404.html | ![Index validation result image](docs-readme/404-validator.png) |  No error found |
+| 404.html | ![404 page validation result image](docs-readme/404-validator.png) |  No error found |
 
 > CSS
 
@@ -231,6 +238,10 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 | Function with the largest signature take 2 arguments, while the median is 0. |
 | Largest function has 17 statements in it, while the median is 1. |
 | The most complex function has a cyclomatic complexity value of 2 while the median is 1. |
+
+>  Error Handling
+
+I also used try...catch method for the largest JavaScript code and no errors came up.
 
 ---
 
