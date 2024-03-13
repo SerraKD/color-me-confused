@@ -177,14 +177,28 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 | Medium Screen | ![Game Over Page image medium screens](docs-readme/gameover-medium.png) |
 | Large Screen | ![Game Over Page image large screens](docs-readme/gameover-large.png) |
 
-### Features Left to Implement
+### __Features Left to Implement__
 
 - In the future, I would like to add a game difficulty option to let users challenge themselves further.
 - Adding a multiplayer option for two users playing the game and testing their cognitive skills at the same time would create more challenge and competition. The user who finishes first with the highest score will win the game.
 
+---
+
 ## Testing
 
 ### __Manual Testing__
+
+- I tested manually all elements and pages on  Mac Book , HP, Iphone 12 using below browsers. 
+- Also with Chrome Developer tools I tested different size devices, and found no errors.
+
+| Browser | Pages | Logo | Buttons | Modal | Desktop| Mobile | Result |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: |  :----: |
+| Chrome| &check; | &check; | &check; | &check; | &check; | &check; | No issues |
+| Safari | &check; | &check; | &check; | &check; | &check;| &check; | No issues |
+| Edge | &check; | &check;| &check; | &check; | &check; | &check; | No issues |
+| Mozilla Firefox | &check; | &check; | &check; | &check; | &check; | &check; | No issues |
+
+---
 
 ### __Validator Testing__
 
@@ -215,10 +229,13 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 | Largest function has 14 statements in it, while the median is 2. |
 | The most complex function has a cyclomatic complexity value of 2 while the median is 1. |
 
+---
 
 ### __Accesibility Testing__
 
-### Fixed Bugs
+---
+
+### __Fixed Bugs__
 
 1. Fix the code for dialog box. [c30dca1](https://github.com/SerraKD/color-me-confused/commit/c30dca1c10b2c22c0c139053f27de0eceb300abf)
 - Fixed by changing the calling id name in script.js 
@@ -240,7 +257,6 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 - index.html had duplicate id for user-scores. by changing id to class in both index.html and style.css error was solved. 
 10. Fix the answer button colors in style.css [709d016](https://github.com/SerraKD/color-me-confused/commit/709d01685b55f8fb55bd9b023a2dc8022662a0dd)
 - While manual testing I realized that answer buttons had blue text on the deployed page on the mobile screen because the colors were not defined. Adding a text color black in CSS resolved the issue.
-
 
 ## Deployment
 
