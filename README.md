@@ -220,24 +220,27 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 ### Fixed Bugs
 
-1. Fix the code for dialog box.
-- Fixed by changing the calling id name in script.js [c30dca1](https://github.com/SerraKD/color-me-confused/commit/c30dca1c10b2c22c0c139053f27de0eceb300abf)
-2. Fix the code for questions array. 
-- Fixed by adding commas between each question object. [3d4b6a0](https://github.com/SerraKD/color-me-confused/commit/3d4b6a019261174413bbc34bdce933523fd46118)
-3. Fix the code for question element.
-- Adding forgotton id in index.html resolved the issue.[7e3e00f](https://github.com/SerraKD/color-me-confused/commit/7e3e00f0c05f69431ac0f7b92d2e972d6aba338d)
-4. Fix the code for button remove event listener.
-- Event listerner for answer buttons was not being removed correctly. Removing arrow function and rewriting it as traditional function resolved the error. [b0168ac](https://github.com/SerraKD/color-me-confused/commit/b0168ac5cbc2f69a8e65f3055fa7ad2be5235409)
-5. Fix the code for button event listener and select answer by moving them into startgame function.
-- When game starts and picked answer code was running multiple times it was having unnecessary loops.  Moving the answer button event listener, check correct answer and select answer function into start game resolved the error. [eb7e7d5](https://github.com/SerraKD/color-me-confused/commit/eb7e7d56262234aa42500a1ce774e0c193c42518)
-6. Remove the manifest for favicon from index.html.
-- The manifest for favicon was creating an error in console. Removing it from index.html resolved the error. [e3c8f40](https://github.com/SerraKD/color-me-confused/commit/e3c8f40cb73677f497b10547c182e2afe6b7feff)
-7. Fix the code for timer by putting it into startGame function.
-- The timer was starting to count down from the landing page, causing incorrect functioning. By adding it into start game function i ensured that timer starts with the game. [43ea558](https://github.com/SerraKD/color-me-confused/commit/43ea5582f057bd0a7f37078eaa3ba392cd18fac0)
-8. Fix the code for open modal selector in style.css. 
-- Css validator was showing an error (Unknown pseudo-element or pseudo-class :modal )for dialog box selector. using devtools i managed to apply same styles with changing the selector name to dialog[open] . [b822756](https://github.com/SerraKD/color-me-confused/commit/b822756c91f51c9528cce5fb6661962a1eee296a)
-9. Fix the code for user scores, change it to class.
-- index.html had duplicate id for user-scores. by changing id to class in both index.html and style.css error was solved. [d307009](https://github.com/SerraKD/color-me-confused/commit/d307009399a2d9043483f19512b1547e59f33c8c)
+1. Fix the code for dialog box. [c30dca1](https://github.com/SerraKD/color-me-confused/commit/c30dca1c10b2c22c0c139053f27de0eceb300abf)
+- Fixed by changing the calling id name in script.js 
+2. Fix the code for questions array. [3d4b6a0](https://github.com/SerraKD/color-me-confused/commit/3d4b6a019261174413bbc34bdce933523fd46118)
+- Fixed by adding commas between each question object. 
+3. Fix the code for question element. [7e3e00f](https://github.com/SerraKD/color-me-confused/commit/7e3e00f0c05f69431ac0f7b92d2e972d6aba338d)
+- Adding forgotton id in index.html resolved the issue.
+4. Fix the code for button remove event listener. [b0168ac](https://github.com/SerraKD/color-me-confused/commit/b0168ac5cbc2f69a8e65f3055fa7ad2be5235409)
+- Event listener for answer buttons was not being removed correctly. Removing arrow function and rewriting it as traditional function resolved the error. 
+5. Fix the code for button event listener and select answer by moving them into startgame function. [eb7e7d5](https://github.com/SerraKD/color-me-confused/commit/eb7e7d56262234aa42500a1ce774e0c193c42518)
+- When game starts and picked answer code was running multiple times it was having unnecessary loops.  Moving the answer button event listener, check correct answer and select answer function into start game resolved the error. 
+6. Remove the manifest for favicon from index.html. [e3c8f40](https://github.com/SerraKD/color-me-confused/commit/e3c8f40cb73677f497b10547c182e2afe6b7feff)
+- The manifest for favicon was creating an error in console. Removing it from index.html resolved the error. 
+7. Fix the code for timer by putting it into startGame function.[43ea558](https://github.com/SerraKD/color-me-confused/commit/43ea5582f057bd0a7f37078eaa3ba392cd18fac0)
+- The timer was starting to count down from the landing page, causing incorrect functioning. By adding it into start game function i ensured that timer starts with the game. 
+8. Fix the code for open modal selector in style.css. [b822756](https://github.com/SerraKD/color-me-confused/commit/b822756c91f51c9528cce5fb6661962a1eee296a)
+- Css validator was showing an error (Unknown pseudo-element or pseudo-class :modal )for dialog box selector. using devtools i managed to apply same styles with changing the selector name to dialog[open] . 
+9. Fix the code for user scores, change it to class.[d307009](https://github.com/SerraKD/color-me-confused/commit/d307009399a2d9043483f19512b1547e59f33c8c)
+- index.html had duplicate id for user-scores. by changing id to class in both index.html and style.css error was solved. 
+10. Fix the answer button colors in style.css [709d016](https://github.com/SerraKD/color-me-confused/commit/709d01685b55f8fb55bd9b023a2dc8022662a0dd)
+- While manual testing I realized that answer buttons had blue text on the deployed page on the mobile screen because the colors were not defined. Adding a text color black in CSS resolved the issue.
+
 
 ## Deployment
 
