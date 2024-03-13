@@ -150,6 +150,8 @@ dialog[open] {
     border-color: #ffffff;
     border-width: thick;
     justify-content: space-around;
+    max-width: 1024px;
+    margin: auto;
 }
 
 .game-area h2 {
