@@ -51,7 +51,6 @@ function startGame() {
         presentQuestion = 0;
         // adds timer and gives user 15 seconds to complete whole game https://www.w3schools.com/jsref/met_win_settimeout.asp
         timer = setTimeout(() => {
-            console.log('Game Over');
             // shows user that the time limit reached, game is over
             gameArea.classList.add("hide");
             const timeUp = document.createElement('p');
@@ -59,11 +58,9 @@ function startGame() {
             document.body.appendChild(timeUp);
             timeUp.style.color = '#ffffff';
         }, gameTimer);
-        console.log(randomQuestion);
         getNextQuestion();
         const answerButtons = document.querySelectorAll('#answer-box button');
         answerButtons.forEach(button => {
-            console.log(button);
             button.addEventListener('click', () => {
                 let selectedAnswer = button.innerText;
                 checkCorrectAnswer((randomQuestion[presentQuestion]), selectedAnswer);
@@ -85,13 +82,11 @@ function viewQuestion(question) {
 // get the next color question
 function getNextQuestion() {
     viewQuestion(randomQuestion[presentQuestion]);
-    console.log('get next question running');
 }
 
 // Gets to next question automatically when picked an answer
 function selectAnswer() {
     presentQuestion++;
-    console.log(presentQuestion);
     if (presentQuestion < randomQuestion.length) {
         getNextQuestion();
     } else {
@@ -113,11 +108,9 @@ function selectAnswer() {
 // check answers 
 function checkCorrectAnswer(question, selectedAnswer) {
     if (selectedAnswer === question.question) {
-        console.log('correct');
         correctScore++;
         correctScoreElm.textContent = correctScore;
     } else {
-        console.log('incorrect');
         incorrectScore++;
         incorrectScoreElm.textContent = incorrectScore;
     }
