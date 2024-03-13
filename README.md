@@ -233,6 +233,13 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 ### __Accesibility Testing__
 
+- [Page Speed](https://pagespeed.web.dev/) and [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) was used for accesibility testing.
+
+| Device | [Page Speed](https://pagespeed.web.dev/) | [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) | Accesibility Score |
+| :----: | :----: | :----: | :----: |
+| Mobile | ![ Page speed mobile result image](docs-readme/pagespeed-mobile.png) | ![ Lighthouse mobile result image](docs-readme/lighthouse-mobile.png) | 100 |
+| Desktop | ![ Page speed desktop result image](docs-readme/pagespeed-desktop.png) | ![ Lighthouse mobile result image](docs-readme/lighthouse-desktop.png) | 100 |
+
 ---
 
 ### __Fixed Bugs__
