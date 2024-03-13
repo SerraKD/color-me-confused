@@ -16,47 +16,50 @@
 </head>
 
 <body>
-    <section class="landing-page">
-        <div id="title-box">
-            <!-- Photo by Chait Goli: https://www.pexels.com/photo/multicolored-skull-decor-1918290/ -->
-            <img src="assets/images/logo.png" alt="logo" class="logo" id="logo" aria-label="Logo links to home page">
-            <h1 class="heading">Color Me Confused!</h1>
-        </div>
-        <div id="menu-box">
-            <div class="start-box">
-                <button class="btn-start" id="btn-start" aria-label="Link to start the game">Start</button>
+    <main>
+        <section class="landing-page">
+            <div id="title-box">
+                <!-- Photo by Chait Goli: https://www.pexels.com/photo/multicolored-skull-decor-1918290/ -->
+                <img src="assets/images/logo.png" alt="logo" class="logo" id="logo"
+                    aria-label="Logo links to home page">
+                <h1 class="heading">Color Me Confused!</h1>
             </div>
-            <!-- Opens The Modal -->
-            <div class="how-to-box" id="how-to-box">
-                <button class="btn-dialog-on" id="btn-dialog-on"
-                    aria-label="Button opens a dialog box with game instructions">?</button>
-                <dialog class="dialog-box" id="dialog-box" aria-label="Dialog box">
-                    <h2 id="dialog-heading">Instructions</h2>
-                    <p>You have 15 seconds to match the colors by their text content.</p>
-                    <p>Remember, focus on what you read, not at what you see!</p>
-                    <button class="btn-dialog-off" id="btn-dialog-off"
-                        aria-label="Button closes the dialog box with game instructions">Close</button>
-                </dialog>
+            <div id="menu-box">
+                <div class="start-box">
+                    <button class="btn-start" id="btn-start" aria-label="Link to start the game">Start</button>
+                </div>
+                <!-- Opens The Modal -->
+                <div class="how-to-box" id="how-to-box">
+                    <button class="btn-dialog-on" id="btn-dialog-on"
+                        aria-label="Button opens a dialog box with game instructions">?</button>
+                    <dialog class="dialog-box" id="dialog-box" aria-label="Dialog box">
+                        <h2 id="dialog-heading">Instructions</h2>
+                        <p>You have 15 seconds to match the colors by their text content.</p>
+                        <p>Remember, focus on what you read, not at what you see!</p>
+                        <button class="btn-dialog-off" id="btn-dialog-off"
+                            aria-label="Button closes the dialog box with game instructions">Close</button>
+                    </dialog>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="game-area hide">
-        <h2 class="heading-hide">Hide</h2>
-        <div class="question-box" id="question-box">color:</div>
-        <!-- Answers to pick -->
-        <div class="answer-box" id="answer-box">
-            <button class="ans-one btn">Blue</button>
-            <button class="ans-two btn">Red</button>
-            <button class="ans-three btn">Green</button>
-            <button class="ans-four btn">Yellow</button>
-        </div>
-        <!-- Scores -->
-        <div id="score-area">
-            <p class="user-scores">Correct Answers <span id="correct">0</span></p>
-            <p class="user-scores">Incorrect Answers <span id="incorrect">0</span></p>
-        </div>
-    </section>
+        <section class="game-area hide">
+            <h2 class="heading-hide">Hide</h2>
+            <div class="question-box" id="question-box">color:</div>
+            <!-- Answers to pick -->
+            <div class="answer-box" id="answer-box">
+                <button class="ans-one btn">Blue</button>
+                <button class="ans-two btn">Red</button>
+                <button class="ans-three btn">Green</button>
+                <button class="ans-four btn">Yellow</button>
+            </div>
+            <!-- Scores -->
+            <div id="score-area">
+                <p class="user-scores">Correct Answers <span id="correct">0</span></p>
+                <p class="user-scores">Incorrect Answers <span id="incorrect">0</span></p>
+            </div>
+        </section>
+    </main>
 
     <script src="assets/js/script.js"></script>
 </body>
