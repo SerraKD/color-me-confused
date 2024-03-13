@@ -42,7 +42,6 @@ Visit the deployed website [here](https://serrakd.github.io/color-me-confused/).
 
 ### Target Audiences
 
-- All individuals who can read and see.
 - Individuals who have interest in brain training games.
 - Individuals who are interested in testing basic cognitive skills.
 - Individuals who are looking for a simple but intriguing fun game.
@@ -210,6 +209,10 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 | :----: | :----: | :----: |
 | index.html | ![Index validation result image](docs-readme/html-validator.png) |  No error found |
 
+| Page | [V3C HTML](https://validator.w3.org/) | Result |
+| :----: | :----: | :----: |
+| 404.html | ![Index validation result image](docs-readme/404-validator.png) |  No error found |
+
 > CSS
 
 | Page | [V3C CSS](https://jigsaw.w3.org/css-validator/) | Result |
@@ -224,9 +227,9 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 | *Returned Metrics For JavaScript* [JShint](https://jshint.com/) |
 | :---- |
-| There are 12 functions in this file.|
+| There are 14 functions in this file. |
 | Function with the largest signature take 2 arguments, while the median is 0. |
-| Largest function has 14 statements in it, while the median is 2. |
+| Largest function has 17 statements in it, while the median is 1. |
 | The most complex function has a cyclomatic complexity value of 2 while the median is 1. |
 
 ---
