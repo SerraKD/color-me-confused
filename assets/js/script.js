@@ -9,7 +9,7 @@ const questionElm = document.getElementById('question-box');
 const gameArea = document.querySelector('.game-area');
 
 let randomQuestion, presentQuestion;
-const gameTimer = 15000;
+const gameTimer = 8000;
 let timer;
 let correctScore = 0;
 let incorrectScore = 0;
