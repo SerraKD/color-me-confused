@@ -57,6 +57,13 @@ function startGame() {
             timeUp.innerText = 'Time is up, You lost.';
             document.body.appendChild(timeUp);
             timeUp.style.color = '#ffffff';
+            // create restart button that links back to landingpage
+            const buttonRestart = document.createElement('button');
+            buttonRestart.innerText = 'Restart';
+            document.body.appendChild(buttonRestart);
+            buttonRestart.addEventListener('click', () => {
+                window.location.assign("./index.html");
+            });
         }, gameTimer);
         getNextQuestion();
         const answerButtons = document.querySelectorAll('#answer-box button');
@@ -102,6 +109,12 @@ function selectAnswer() {
         finalScore.innerText = `Your Score is: ${correctScore}`;
         document.body.appendChild(finalScore);
         finalScore.style.color = '#ffffff';
+        const buttonRestart = document.createElement('button');
+        buttonRestart.innerText = 'Restart';
+        document.body.appendChild(buttonRestart);
+        buttonRestart.addEventListener('click', () => {
+            window.location.assign("./index.html");
+        });
     }
 }
 
