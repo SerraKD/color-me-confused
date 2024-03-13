@@ -172,6 +172,7 @@ dialog[open] {
     border-color: inherit;
     cursor: pointer;
     font-size: x-large;
+    color: black;
 }
 
 /* adds gradient effect to buttons https://www.w3schools.com/css/css3_gradients.asp */
