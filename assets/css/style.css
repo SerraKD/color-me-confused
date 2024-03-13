@@ -40,6 +40,22 @@ body {
     cursor: pointer;
 }
 
+/* Styles the restart button */
+button {
+    font-family: roboto condensed;
+    border-radius: 15px;
+    padding: 4px 8px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    border-style: ridge;
+    font-size: large;
+    color: #9C0000;
+    border-color: #42FF00;
+    border-width: medium;
+    cursor: pointer;
+    margin-top: 5vh;
+}
+
 /* Styles start button */
 .btn-start {
     font-family: roboto condensed;
@@ -53,6 +69,7 @@ body {
     border-color: #42FF00;
     border-width: medium;
     cursor: pointer;
+    margin-top: unset;
 }
 
 .start-box {
@@ -72,6 +89,7 @@ body {
     border-color: #42FF00;
     border-width: medium;
     cursor: pointer;
+    margin-top: unset;
 }
 
 /* Hover effect for buttons */
@@ -119,6 +137,7 @@ dialog[open] {
     border-color: #42FF00;
     border-width: medium;
     cursor: pointer;
+    margin-top: unset;
 }
 
 /* Styles game area */
