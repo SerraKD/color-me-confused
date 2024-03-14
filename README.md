@@ -246,7 +246,7 @@ The website consists of a Logo, heading, landing page, game page, time up page, 
 
 I also used try...catch method for the largest JavaScript code and no errors came up.
 
-```json
+```js
 function startGame() {
     try {
         menuBox.classList.add("hide");
@@ -376,6 +376,9 @@ __Clone__:
 - [V3C CSS](https://jigsaw.w3.org/css-validator/) used for CSS validator testing.
 - [JShint](https://jshint.com/) used for JavaScript testing.
 - [Dev Tools](https://developer.chrome.com/docs/devtools/) was used throughout the project for testing, troubleshooting, and styling.
+- Instructions for Markdown styntax taken from [Markdown Guide](https://www.markdownguide.org/extended-syntax/).
+- Instructions for local deployment from [Github Docs](https://docs.github.com/).
+
 > Below JS documents were used as studying and reference material;
 - https://www.w3schools.com/jsref/met_document_queryselector.asp
 - https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal
